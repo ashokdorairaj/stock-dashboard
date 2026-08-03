@@ -199,6 +199,21 @@ footer { color: var(--muted); font-size: 0.8rem; padding-bottom: 32px; }
 .trade-status { font-size: 0.85rem; min-height: 1em; }
 .trade-status a, .trade-row a { color: var(--accent); }
 
+/* --- Mobile --- */
 @media (max-width: 700px) {
   .cards { grid-template-columns: 1fr; }
+  header, main, footer { padding: 0 12px; }
+  header { padding-top: 16px; }
+  header h1 { font-size: 1.35rem; }
+  .card { padding: 12px; }
+  /* tables scroll sideways instead of squishing */
+  #portfolio, #scoreboard { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  #portfolio .data-table, #scoreboard .data-table { min-width: 560px; }
+  .data-table th, .data-table td { padding: 6px 8px; font-size: 0.85rem; }
+  .analysis { font-size: 0.8rem; }
+  .analysis table { min-width: 480px; }
+  .trade-row { flex-direction: column; align-items: stretch; }
+  .trade-form input, .trade-form select, .trade-form input[type="number"],
+  #tr-ticker, .token-row input { width: 100%; min-width: 0; }
+  .gate-card { width: calc(100vw - 40px); max-width: 340px; padding: 22px; }
 }

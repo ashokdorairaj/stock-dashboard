@@ -93,7 +93,7 @@ function renderDashboard() {
           · 3Y ${fmt$(p.fairPrice3y)} · 5Y ${fmt$(p.fairPrice5y)} · 7Y ${fmt$(p.fairPrice7y)}
         </div>
         <details>
-          <summary>Full SecDiver analysis</summary>
+          <summary>Full analysis — Ashok's Driver Model</summary>
           <div class="analysis">${renderMd(p.analysisMd)}</div>
         </details>
       </div>`).join("");
